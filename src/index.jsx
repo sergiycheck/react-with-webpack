@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
-let root;
+import "./index.css";
+import AnimeGirlStepOnYou from "./assets/anime_girl_step_on_you.jpeg";
 
 function App() {
   const [count, setCount] = React.useState(0);
@@ -12,6 +12,7 @@ function App() {
       <button onClick={() => setCount((count) => count + 1)}>Click me</button>
 
       <p>Change 1</p>
+      <img className="general-img" src={AnimeGirlStepOnYou} alt="anime girl step on you" />
     </div>
   );
 }

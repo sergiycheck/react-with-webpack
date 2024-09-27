@@ -66,5 +66,5 @@ module.exports = {
     port: 3000,
     hot: true,
   },
-  optimization: { runtimeChunk: "single" },
+  optimization: { runtimeChunk: "single", splitChunks: { chunks: "all" } },
 };
